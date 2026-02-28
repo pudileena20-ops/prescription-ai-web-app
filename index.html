@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Prescription AI App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Prescription AI reader</h1>
+
+    <div>
+
+        <h2>Upload Prescription</h2>
+        <input type="file" id="prescriptionFile" accept="image/*"> 
+        <button onclick="processPrescription()">Extract Medicines</button>
+    </div>
+
+    <div>
+        <h2>Extracted medicines</h2>
+        <ul id="medicineList"></ul>
+    </div>
+
+</div>
+
+    <div id="map" style='width:100%;height:400px;margin-top:20px;'>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    
+    
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKkGeT3aT7j-sJYdeKT19OdVzSoyZGbGU&libraries=places&callback=initMap">
+    </script>
+
+
+</body>
+</html>
+
